@@ -276,11 +276,11 @@ ABC.add_noise = function(s, dt, noise) {
  */
 ABC.project = function(s) {
     for (var i = 0; i < 3; i++) {
-        if (s[i] > 1) {
-            s[i] -= 1;
+        if (s[i] > 2 * Math.PI) {
+            s[i] -= 2 * Math.PI;
         }
         if (s[i] < 0) {
-            s[i] += 1;
+            s[i] += 2 * Math.PI;
         }
     }
 }

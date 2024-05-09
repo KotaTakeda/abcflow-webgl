@@ -18,5 +18,5 @@ void main() {
         * rotate_z(rotation.z)
         * view_scale(scale, scale, scale)
         * position;
-    gl_PointSize = 16.0 * scale;
+    gl_PointSize = 64.0 * scale;
 }
