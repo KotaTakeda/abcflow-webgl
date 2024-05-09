@@ -59,6 +59,11 @@ window.addEventListener('load', function() {
             controls.set_B(1);
             controls.set_C(1);
             controls.set_k(1);
+        } else if (preset.value === 'param1') {
+            controls.set_A(1);
+            controls.set_B(Math.sqrt(2/3));
+            controls.set_C(Math.sqrt(1/3));
+            controls.set_k(1);
         }
     });
 });
