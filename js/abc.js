@@ -403,6 +403,7 @@ ABC.prototype.draw = function() {
     var translation = this.display.translation;
     var start = (this.tail_index - 1 + length) % length;
 
+    // Draw tail
     gl.useProgram(this.programs.tail.program);
     var attrib = this.programs.tail.attrib;
     var uniform = this.programs.tail.uniform;
@@ -428,6 +429,7 @@ ABC.prototype.draw = function() {
                         (length - start - 1) * 2);
     }
 
+    // Draw head
     if (this.display.draw_heads) {
         gl.useProgram(this.programs.head.program);
         attrib = this.programs.head.attrib;
